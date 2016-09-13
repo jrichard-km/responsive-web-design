@@ -1,0 +1,65 @@
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    content: ' ';
+}
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* close commented backslash hack */
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.global-header .logo-bar {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+}
+.global-header .logo-bar .toggle-navigation {
+    float: left;
+}
+.global-header .logo-bar .toggle-search {
+    float: right;
+}
+
+.global-header .search-field {
+    display: none;
+}
+
+.global-header .navigation-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.global-header .navigation-menu li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: calc(100% / 10);
+    text-align: center;
+}
+
+@media all and (orientation: portrait) {
+	.global-header .navigation-menu li {
+		display: list-item;
+		width: 100%;
+	}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.emoji {
+		font-size: 1.5em;
+	}
+}
